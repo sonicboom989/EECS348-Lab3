@@ -1,0 +1,71 @@
+body { font-family: Arial, sans-serif; background: #f7f7f7; padding: 20px; }
+    h2 { color: #333; }
+    form { margin-bottom: 20px; }
+    input[type="number"] {
+      padding: 6px 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      padding: 6px 12px;
+      font-size: 1rem;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #1d4ed8;
+    }
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    th {
+      background: #e5e7eb;
+      font-weight: bold;
+    }
+    .index-cell {
+      background: #f3f4f6;
+      font-weight: bold;
+    }
+    /* Header / Navigation */
+.site-header {
+  background: #2563eb;  /* blue */
+  padding: 0.75rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Optional: highlight current page */
+.nav a.active {
+  background: rgba(255, 255, 255, 0.3);
+}
