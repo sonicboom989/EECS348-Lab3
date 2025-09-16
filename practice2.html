@@ -1,0 +1,41 @@
+<html>
+
+    <head>
+        <h1>CSS Font Control</h1>
+    </head>
+        <body>
+            <h2>The Canterbury Tales: General Prologue</h2>
+            Whan that Aprille with his shoures soote,<br>
+            The droghte of March hath perced to the roote,<br>
+            And bathed every veyne in swich licóur <br>
+            Of which vertú engendred is the flour; <br>
+            Whan Zephirus eek with his swete breeth <br>
+            Inspired hath in every holt and heeth <br>
+            The tendre croppes, and the yonge sonne <br>
+            Hath in the Ram his halfe cours y-ronne,<br>
+            And smale foweles maken melodye,<br>
+            That slepen al the nyght with open ye,<br>
+            So priketh hem Natúre in hir corages,<br>
+            Thanne longen folk to goon on pilgrimages,<br>
+            And palmeres for to seken straunge strondes,<br>
+            To ferne halwes, kowthe in sondry londes;<br>
+            And specially, from every shires ende<br>
+            Of Engelond, to Caunterbury they wende,<br>
+            The hooly blisful martir for to seke,<br>
+            That hem hath holpen whan that they were seeke.<br>
+
+            <input type = "text" id = "input" value="">
+            <button id="setColorBtn" onclick="setColor()">Set Color</button>
+            <script>
+                var input = document.getElementById("input")
+                
+                function setColor() {
+                    var input = document.getElementById("input").value;
+                    var rgb = input.split(',');
+                    document.body.style.color = `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+                    }
+                
+            </script>
+        </body>
+
+</html>
